@@ -23,11 +23,9 @@ Database Dependency Diagram
       ii.Why is it important:This is the of of the important query that is show becuse if you want to have specifect output like departments.
      
      
-     #### iii.Sample output:
+   ####iii.Sample output:
      
-     
-     
-    ** SELECT first_name,gender 
+   SELECT first_name,gender 
        FROM employees;
 
    ![query1](https://user-images.githubusercontent.com/72918495/103280230-d6df0300-4a0a-11eb-9169-d85fbb79164f.png)
