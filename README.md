@@ -21,7 +21,12 @@ Database Dependency Diagram
 1.QUERY 
        i. Description:This query show the table depatment.
       ii.Why is it important:This is the of of the important query that is show becuse if you want to have specifect output like departments.
+     
+     
      #### iii.Sample output:
+     
+     
+     
     ** SELECT first_name,gender 
        FROM employees;
 
