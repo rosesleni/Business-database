@@ -19,12 +19,12 @@ Database Dependency Diagram
 ![ERD image](https://user-images.githubusercontent.com/72918495/103279845-c67a5880-4a09-11eb-8baa-ea8bce14cfb7.png)
 
 1.QUERY 
-       i. Description:This query show the table depatment.
-      ii.Why is it important:This is the of of the important query that is show becuse if you want to have specifect output like departments.
+  i. Description:This query show the table depatment.
+       
+  ii.Why is it important:This is the of of the important query that is show becuse if you want to have specifect output like departments.
      
      
-     #### iii.Sample output:
-     
+iii.Sample output:
      
      
     ** SELECT first_name,gender 
