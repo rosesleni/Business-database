@@ -8,6 +8,8 @@ Database Dependency Diagram
 1.QUERY 
        i. Description:
       ii.Why is it important:
+      iii.sample output
+      
 
 2.QUERY 
        i. Description:
