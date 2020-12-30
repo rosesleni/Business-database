@@ -151,27 +151,39 @@ iii: sample output:
 ![1](https://user-images.githubusercontent.com/72918495/103336349-dd28ba00-4ab2-11eb-8349-c0466e116c23.png)
   ##
 13.QUERY 
-       i. Description:
-      ii.Why is it important:
-      
-   iii: sample output:
+      i. Description: this query shows direct details from employees this shows all lists of every department code number.
+   ii.Why is it important: Is It important for you to show and to pick up all the details from said company.
+   
+  iii: sample output:
+    Select dept_no,emp_no from dept_manager;
+   
+![2](https://user-images.githubusercontent.com/72918495/103337119-3b569c80-4ab5-11eb-9e57-ec5f6cc93028.png)
+
    
 ##
 14.QUERY 
-       i. Description:
-      ii.Why is it important:
+        i. Description: This query shows a limited list of employees.
+      ii.Why is it important: This query shows if you want to have a list and limit the name of employee list,details. 
       
    iii: sample output:
+   select first_name from employees limit 5; 
+   ![query15](https://user-images.githubusercontent.com/72918495/103330759-cd52ab00-4a9d-11eb-831b-a31ce67af81a.png)
+
 ##
 15.QUERY 
-       i. Description:
-      ii.Why is it important:
+       i. Description: this query is Another example to show your details.
+      ii.Why is it important: these examples, we can easily use sql limit clause. 
       
    iii: sample output:
+   select * from employees limit 1;
+   ![query13](https://user-images.githubusercontent.com/72918495/103330756-cc217e00-4a9d-11eb-89a1-10c5a9cb71c0.png)
+
+
 ##
 16.QUERY 
        i. Description:
-      ii.Why is it important:
+       
+    ii.Why is it important:
       
    iii: sample output:
 ##
