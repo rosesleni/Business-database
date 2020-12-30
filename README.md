@@ -187,7 +187,7 @@ iii: sample output:
   ii.Why is it important: The importance of this query is to show limited list of employee 
       
 
-   iii: sample output:
+ iii: sample output:
    SELECT * FROM employees WHERE first_name LIKE 'A%'
    ![3](https://user-images.githubusercontent.com/72918495/103339056-56c4a600-4abb-11eb-9e2c-c1ff77f9716c.png)
 ##
@@ -213,20 +213,23 @@ FROM employees,departments;
 
  
    
-##19.QUERY 
+##
+19.QUERY 
        i. Description:this query show retrieve employees (name and emp_no) whose emp_no is even.                                                                                
     ii.Why is it important:Importance of this is the chance any thing in the table makes details. 
-      
-
-
+     
  iii: sample output:
    SELECT emp_no FROM employees WHERE emp_no % 2 =0;
+   ![5](https://user-images.githubusercontent.com/72918495/103343363-e02da580-4ac6-11eb-81c3-ee7716af6ab0.png)
+
    
-   
- ##20.QUERY 
+ ##
+ 20.QUERY 
        i. Description:
       ii.Why is it important:
       
    iii: sample output:
+   SELECT last_name, YEAR(birth_date)AS "birth year" FROM employees WHERE emp_no=10001;
+   
 
 
