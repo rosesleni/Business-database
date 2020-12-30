@@ -12,8 +12,8 @@ Table name and Description:
 
   iii.department-manager- This table shows all records of employees where they started work.
 
- iiii. -Salary- showing all records and details of their salaries.
-
+ iv. -Salary- showing all records and details of their salaries.
+ 
 Database Dependency Diagram
 
 ![ERD image](https://user-images.githubusercontent.com/72918495/103279845-c67a5880-4a09-11eb-8baa-ea8bce14cfb7.png)
@@ -22,14 +22,7 @@ Database Dependency Diagram
        i. Description:This query show the table depatment.
       ii.Why is it important:This is the of of the important query that is show becuse if you want to have specifect output like departments.
      
-     
-   ####iii.Sample output:
-     
-   SELECT first_name,gender 
-       FROM employees;
-
-   ![query1](https://user-images.githubusercontent.com/72918495/103280230-d6df0300-4a0a-11eb-9169-d85fbb79164f.png)
-      
+   Sample output:
 
 2.QUERY 
        i. Description:
