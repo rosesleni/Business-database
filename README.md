@@ -67,7 +67,7 @@ iii: sample output:
    SELECT first_name, hire_date 
 FROM employees 
 WHERE YEAR(hire_date)  LIKE '2018%';
-  ![query8](https://user-images.githubusercontent.com/72918495/103330749-c9bf2400-4a9d-11eb-87be-cbdc616b13c1.png)
+ ![query8](https://user-images.githubusercontent.com/72918495/103330749-c9bf2400-4a9d-11eb-87be-cbdc616b13c1.png)
 ##
 6.QUERY 
    i. Description: In this query shows the list of the employee and the hired date.
@@ -123,13 +123,12 @@ ii.Why is it important: This is Important because if you don't have an idea how 
       
 iii: sample output:
    Select count(*) from employees;
-  
+   
 ![query14](https://user-images.githubusercontent.com/72918495/103330757-ccba1480-4a9d-11eb-9757-6be66f6e0583.png)
-##
+ ##
 11.QUERY
-
- i. Description:This query shows employee  number and dates.
-ii.Why is it important:Need only the entry for the employees latest data.
+i. Description:This query shows employee  number and dates.
+ ii.Why is it important:Need only the entry for the employees latest data.
 
 iii: sample output:
     Select  dept_no,from_date 
