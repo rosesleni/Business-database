@@ -16,7 +16,7 @@ Table name and Description:
  
 Database Dependency Diagram
 
-![ERD image](https://user-images.githubusercontent.com/72918495/103279845-c67a5880-4a09-11eb-8baa-ea8bce14cfb7.png)
+(https://user-images.githubusercontent.com/72918495/103279845-c67a5880-4a09-11eb-8baa-ea8bce14cfb7.png)
 >
 1.QUERY 
        i. Description:Particular employee maximum salary details
@@ -27,7 +27,7 @@ Database Dependency Diagram
   ** 
    SELECT sal1.* FROM salaries AS sal1 LEFT JOIN salaries AS sal2 ON (sal1.emp_no = sal2.emp_no AND sal1.from_date < sal2.from_date) WHERE sal2.from_date IS NULL and sal1.emp_no = 10001;
    
-   ![query10](https://user-images.githubusercontent.com/72918495/103329073-1dc60a80-4a96-11eb-99bb-6dacff4f7e67.png)
+  (https://user-images.githubusercontent.com/72918495/103329073-1dc60a80-4a96-11eb-99bb-6dacff4f7e67.png)
 >
 2.QUERY 
        i. Description: This query show Employee and Salary table join to display the salary of the individual
@@ -39,7 +39,7 @@ Database Dependency Diagram
    
    Select emp.emp_no, emp.first_name, emp.last_name, sal.salary, sal.from_date from employees emp inner join (select emp_no, MAX(salary) as salary, from_date from salaries group by emp_no) sal on (emp.emp_no = sal.emp_no) limit 10;
    
-   ![query11](https://user-images.githubusercontent.com/72918495/103330287-c460da00-4a9b-11eb-935f-0f3dafbf0553.png)
+  (https://user-images.githubusercontent.com/72918495/103330287-c460da00-4a9b-11eb-935f-0f3dafbf0553.png)
 
 >
 3.QUERY 
@@ -50,7 +50,7 @@ Database Dependency Diagram
   
  SELECT MAX(salary) FROM salaries WHERE salary NOT IN ( SELECT Max(salary) FROM salaries);
  
-![query12](https://user-images.githubusercontent.com/72918495/103330755-cb88e780-4a9d-11eb-97a0-5267194df575.png)
+ (https://user-images.githubusercontent.com/72918495/103330755-cb88e780-4a9d-11eb-97a0-5267194df575.png)
 
  >
 4.QUERY 
@@ -59,6 +59,7 @@ Database Dependency Diagram
      
       
    iii: sample output:
+   
    Select emp.emp_no, emp.first_name, emp.last_name, sal.salary, sal.to_date from employees emp inner join (select emp_no, MAX(salary) as salary, to_date from salaries group by emp_no) sal on (emp.emp_no = sal.emp_no) limit 10;
    
    (https://user-images.githubusercontent.com/72918495/103330760-cd52ab00-4a9d-11eb-84bf-2594359130bb.png)
@@ -74,6 +75,9 @@ Database Dependency Diagram
    SELECT first_name, hire_date 
 FROM employees 
 WHERE YEAR(hire_date)  LIKE '2018%';
+![query8](https://user-images.githubusercontent.com/72918495/103330749-c9bf2400-4a9d-11eb-87be-cbdc616b13c1.png)
+
+
 
    
 6.QUERY 
