@@ -65,8 +65,6 @@ Database Dependency Diagram
    
    (https://user-images.githubusercontent.com/72918495/103330760-cd52ab00-4a9d-11eb-84bf-2594359130bb.png)
 
-
-
 5.QUERY 
         i. Description:  show the details in your company work on date.
 
@@ -80,9 +78,6 @@ WHERE YEAR(hire_date)  LIKE '2018%';
 
 ![query8](https://user-images.githubusercontent.com/72918495/103330749-c9bf2400-4a9d-11eb-87be-cbdc616b13c1.png)
 
-
-
-   
 6.QUERY 
      i. Description: In this query shows the list of the employee and the hired date.
 
@@ -104,8 +99,10 @@ WHERE
 ![query7](https://user-images.githubusercontent.com/72918495/103330747-c9bf2400-4a9d-11eb-93c7-5323a4ee14e2.png)
 
 7.QUERY 
-       i. Description:
-      ii.Why is it important:
+      i. Description:In this query display all the information of the employees whose salary is within the range 3000..
+
+   ii.Why is it important: The importance of this is to show salary like you want to direct to show your salaries
+
       
    iii: sample output:
    Select * from salaries  where salary> all(select salary  from salaries where salary<3000);
@@ -114,28 +111,51 @@ WHERE
 
 
 8.QUERY 
-       i. Description:
-      ii.Why is it important:
+     i. Description:this query showing list employee numbers and theirs who have  the biggest salary.
+     
+ ii.Why is it important: Importance of this is showing details to every employee.
+
       
    iii: sample output:
+   Select emp_no,max(salary) from salaries group by emp_no;
+   
+   ![query6](https://user-images.githubusercontent.com/72918495/103330746-c9268d80-4a9d-11eb-91fa-82b03d3ff90d.png)
 
 9.QUERY 
-       i. Description:
-      ii.Why is it important:
-      
+       i. Description: this query shows the employee personal details.
+       
+   ii.Why is it important: importance of this is to have a  list of your employees. 
+
    iii: sample output:
+   Select first_name,last_name FROM `employees` WHERE 1
+   
+   ![query3](https://user-images.githubusercontent.com/72918495/103330743-c7f56080-4a9d-11eb-956e-e6bcf383e59a.png)
+
 
 10.QUERY 
-       i. Description:
-      ii.Why is it important:
+         i. Description:This query shows how to count your employees. 
+       
+   ii.Why is it important: This is Important because if you don't have an idea how to count your employee you can use this query to have your list.
       
    iii: sample output:
+   Select count(*) from employees;
+  
+![query14](https://user-images.githubusercontent.com/72918495/103330757-ccba1480-4a9d-11eb-9757-6be66f6e0583.png)
+
+
 
 11.QUERY 
        i. Description:
       ii.Why is it important:
 
    iii: sample output:
+    Select  dept_no,from_date 
+FROM dept_manager; 
+
+![query1](https://user-images.githubusercontent.com/72918495/103330741-c62b9d00-4a9d-11eb-9144-32073b5ebe73.png)
+
+
+
 12.QUERY 
        i. Description:
       ii.Why is it important:
