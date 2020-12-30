@@ -54,9 +54,10 @@ Database Dependency Diagram
 
  >
 4.QUERY 
-       i. Description:
-      ii.Why is it important:
-     
+         i. Description: In this output shows the details of salaries.
+         
+   ii.Why is it important: Important to have details to you Salaries also to all employees that you have.
+
       
    iii: sample output:
    
@@ -67,30 +68,54 @@ Database Dependency Diagram
 
 
 5.QUERY 
-       i. Description:
-      ii.Why is it important:
+        i. Description:  show the details in your company work on date.
+
+   ii.Why is it important: The importance of this showing how it simply shows all workers work in and out. 
 
    iii: sample output:
    
    SELECT first_name, hire_date 
 FROM employees 
 WHERE YEAR(hire_date)  LIKE '2018%';
+
 ![query8](https://user-images.githubusercontent.com/72918495/103330749-c9bf2400-4a9d-11eb-87be-cbdc616b13c1.png)
 
 
 
    
 6.QUERY 
-       i. Description:
-      ii.Why is it important:
-      
+     i. Description: In this query shows the list of the employee and the hired date.
+
+  ii.Why is it important: It is important to show all the list employees for you to have an idea to their details. 
+
    iii: sample output:
+   Select 
+    first_name, last_name,hire_date
+FROM
+    employees
+WHERE
+    EXISTS( SELECT 
+            1
+        FROM
+            employees
+        WHERE
+           employees.first_name = employees.first_name);
+
+![query7](https://user-images.githubusercontent.com/72918495/103330747-c9bf2400-4a9d-11eb-93c7-5323a4ee14e2.png)
+
+
+   
 
 7.QUERY 
        i. Description:
       ii.Why is it important:
       
    iii: sample output:
+   Select * from salaries  where salary> all(select salary  from salaries where salary<3000);
+   
+![query3](https://user-images.githubusercontent.com/72918495/103330743-c7f56080-4a9d-11eb-956e-e6bcf383e59a.png)
+
+
 
 8.QUERY 
        i. Description:
