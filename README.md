@@ -31,78 +31,127 @@ Database Dependency Diagram
 
 2.QUERY 
        i. Description:
-      ii.Why is it important:
+       
+   ii.Why is it important:
+   
+   
+   iii: sample output:
+   
+   Select emp.emp_no, emp.first_name, emp.last_name, sal.salary, sal.from_date from employees emp inner join (select emp_no, MAX(salary) as salary, from_date from salaries group by emp_no) sal on (emp.emp_no = sal.emp_no) limit 10;
+   
 
 3.QUERY 
        i. Description:
       ii.Why is it important:
-
+      
+   iii: sample output:
+  
+ SELECT MAX(salary) FROM salaries WHERE salary NOT IN ( SELECT Max(salary) FROM salaries);
+ 
 4.QUERY 
        i. Description:
       ii.Why is it important:
+      
+   iii: sample output:
+   Select emp.emp_no, emp.first_name, emp.last_name, sal.salary, sal.to_date from employees emp inner join (select emp_no, MAX(salary) as salary, to_date from salaries group by emp_no) sal on (emp.emp_no = sal.emp_no) limit 10;
 
 5.QUERY 
        i. Description:
       ii.Why is it important:
 
+   iii: sample output:
+   
+   SELECT first_name, hire_date 
+FROM employees 
+WHERE YEAR(hire_date)  LIKE '2018%';
+
+   
 6.QUERY 
        i. Description:
       ii.Why is it important:
+      
+   iii: sample output:
 
 7.QUERY 
        i. Description:
       ii.Why is it important:
+      
+   iii: sample output:
 
 8.QUERY 
        i. Description:
       ii.Why is it important:
+      
+   iii: sample output:
 
 9.QUERY 
        i. Description:
       ii.Why is it important:
+      
+   iii: sample output:
 
 10.QUERY 
        i. Description:
       ii.Why is it important:
+      
+   iii: sample output:
 
 11.QUERY 
        i. Description:
       ii.Why is it important:
 
+   iii: sample output:
 12.QUERY 
        i. Description:
       ii.Why is it important:
 
+   iii: sample output:
 13.QUERY 
        i. Description:
       ii.Why is it important:
+      
+   iii: sample output:
 
 14.QUERY 
        i. Description:
       ii.Why is it important:
+      
+   iii: sample output:
 
 15.QUERY 
        i. Description:
       ii.Why is it important:
+      
+   iii: sample output:
 
 16.QUERY 
        i. Description:
       ii.Why is it important:
+      
+   iii: sample output:
 
 17.QUERY 
        i. Description:
       ii.Why is it important:
+      
+   iii: sample output:
 
 18.QUERY 
        i. Description:
       ii.Why is it important:
+      
+   iii: sample output:
 
 19.QUERY 
        i. Description:
       ii.Why is it important:
 
+   iii: sample output:
+   
 20.QUERY 
        i. Description:
       ii.Why is it important:
+      
+   iii: sample output:
 
 
