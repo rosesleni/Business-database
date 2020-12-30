@@ -41,17 +41,18 @@ Database Dependency Diagram
    
    ![query11](https://user-images.githubusercontent.com/72918495/103330287-c460da00-4a9b-11eb-935f-0f3dafbf0553.png)
 
-
+>
 3.QUERY 
-       i. Description:
-      ii.Why is it important:
-      
+       i. Description:It show here is the Second largest salary
+      ii.Why is it important: It is important to have this because it shows who is the one of your employees with the highest salaries. 
+
    iii: sample output:
   
  SELECT MAX(salary) FROM salaries WHERE salary NOT IN ( SELECT Max(salary) FROM salaries);
  
 ![query12](https://user-images.githubusercontent.com/72918495/103330755-cb88e780-4a9d-11eb-97a0-5267194df575.png)
- 
+
+ >
 4.QUERY 
        i. Description:
       ii.Why is it important:
