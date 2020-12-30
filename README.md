@@ -17,31 +17,27 @@ Table name and Description:
 Database Dependency Diagram
 
 (https://user-images.githubusercontent.com/72918495/103279845-c67a5880-4a09-11eb-8baa-ea8bce14cfb7.png)
->
+##
 1.QUERY 
        i. Description:Particular employee maximum salary details
        
    ii.Why is it important:This is the most important query that is shown because if you want to have specific output like salaries.
      
    iii: Sample output:
-  ** 
    SELECT sal1.* FROM salaries AS sal1 LEFT JOIN salaries AS sal2 ON (sal1.emp_no = sal2.emp_no AND sal1.from_date < sal2.from_date) WHERE sal2.from_date IS NULL and sal1.emp_no = 10001;
    
-  (https://user-images.githubusercontent.com/72918495/103329073-1dc60a80-4a96-11eb-99bb-6dacff4f7e67.png)
-  
+  (https://user-images.githubusercontent.com/72918495/103329073-1dc60a80-4a96-11eb-99bb-6dacff4f7e67.png) 
   ##
 2.QUERY 
        i. Description: This query show Employee and Salary table join to display the salary of the individual
        
    ii.Why is it important:It is important for me bacause its shows 
    
-   
    iii: sample output:
-   
    Select emp.emp_no, emp.first_name, emp.last_name, sal.salary, sal.from_date from employees emp inner join (select emp_no, MAX(salary) as salary, from_date from salaries group by emp_no) sal on (emp.emp_no = sal.emp_no) limit 10;
    
   (https://user-images.githubusercontent.com/72918495/103330287-c460da00-4a9b-11eb-935f-0f3dafbf0553.png)
-###
+##
 3.QUERY 
        i. Description:It show here is the Second largest salary
       ii.Why is it important: It is important to have this because it shows who is the one of your employees with the highest salaries. 
@@ -62,8 +58,7 @@ Database Dependency Diagram
     Select emp.emp_no, emp.first_name, emp.last_name, sal.salary, sal.to_date from employees emp inner join (select emp_no, MAX(salary) as salary, to_date from salaries group by emp_no) sal on (emp.emp_no = sal.emp_no) limit 10;
    
    (https://user-images.githubusercontent.com/72918495/103330760-cd52ab00-4a9d-11eb-84bf-2594359130bb.png)
-   
-  ###
+  ##
 5.QUERY 
         i. Description:  show the details in your company work on date.
 
@@ -74,10 +69,8 @@ iii: sample output:
    SELECT first_name, hire_date 
 FROM employees 
 WHERE YEAR(hire_date)  LIKE '2018%';
-
 ![query8](https://user-images.githubusercontent.com/72918495/103330749-c9bf2400-4a9d-11eb-87be-cbdc616b13c1.png)
-
-###
+##
 6.QUERY 
    i. Description: In this query shows the list of the employee and the hired date.
 
@@ -97,8 +90,7 @@ WHERE
            employees.first_name = employees.first_name);
 
 ![query7](https://user-images.githubusercontent.com/72918495/103330747-c9bf2400-4a9d-11eb-93c7-5323a4ee14e2.png)
-###
-
+##
 7.QUERY 
 
    i. Description:In this query display all the information of the employees whose salary is within the range 3000..
@@ -109,7 +101,7 @@ WHERE
    Select * from salaries  where salary> all(select salary  from salaries where salary<3000);
    
 ![query4](https://user-images.githubusercontent.com/72918495/103330744-c88df700-4a9d-11eb-9e9a-953cf108f379.png)
-###
+##
 
 8.QUERY 
   i. Description:this query showing list employee numbers and theirs who have  the biggest salary.
@@ -120,7 +112,7 @@ iii: sample output:
    Select emp_no,max(salary) from salaries group by emp_no;
    
    ![query6](https://user-images.githubusercontent.com/72918495/103330746-c9268d80-4a9d-11eb-91fa-82b03d3ff90d.png)
-####
+##
 9.QUERY 
 
    i. Description: this query shows the employee personal details.
@@ -132,7 +124,7 @@ iii: sample output:
    
    ![query3](https://user-images.githubusercontent.com/72918495/103330743-c7f56080-4a9d-11eb-956e-e6bcf383e59a.png)
 
-####
+##
 10.QUERY 
 
   i. Description:This query shows how to count your employees. 
@@ -143,8 +135,7 @@ iii: sample output:
    Select count(*) from employees;
   
 ![query14](https://user-images.githubusercontent.com/72918495/103330757-ccba1480-4a9d-11eb-9757-6be66f6e0583.png)
-
-####
+##
 11.QUERY
 
  i. Description:This query shows employee  number and dates.
@@ -156,8 +147,7 @@ FROM dept_manager;
 
 ![query1](https://user-images.githubusercontent.com/72918495/103330741-c62b9d00-4a9d-11eb-9144-32073b5ebe73.png)
 
-####
-
+##
 12.QUERY 
         i. Description:This query shows employees gender,name.
         
@@ -166,53 +156,51 @@ FROM dept_manager;
 iii: sample output:
    Select first_name,gender 
        FROM employees;
-    
-  [](url)
+       
 ![1](https://user-images.githubusercontent.com/72918495/103336349-dd28ba00-4ab2-11eb-8349-c0466e116c23.png)
-  ####
-
+  ##
 13.QUERY 
        i. Description:
       ii.Why is it important:
       
    iii: sample output:
-
+##
 14.QUERY 
        i. Description:
       ii.Why is it important:
       
    iii: sample output:
-
+##
 15.QUERY 
        i. Description:
       ii.Why is it important:
       
    iii: sample output:
-
+##
 16.QUERY 
        i. Description:
       ii.Why is it important:
       
    iii: sample output:
-
+##
 17.QUERY 
        i. Description:
       ii.Why is it important:
       
    iii: sample output:
-
+##
 18.QUERY 
        i. Description:
       ii.Why is it important:
       
    iii: sample output:
-
+##
 19.QUERY 
        i. Description:
       ii.Why is it important:
 
    iii: sample output:
-   
+ ## 
 20.QUERY 
        i. Description:
       ii.Why is it important:
