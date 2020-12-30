@@ -20,6 +20,7 @@ Database Dependency Diagram
 
 1.QUERY 
        i. Description:Particular employee maximum salary details
+       
       ii.Why is it important:This is the of of the important query that is show becuse if you want to have specifect output like salries.
      
    Sample output:
