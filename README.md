@@ -203,19 +203,25 @@ FROM employees,departments;
 
 ##
 18.QUERY 
-       i. Description:
-       
-  ii.Why is it important:
-      
+      i. Description:this query shows the details and selected name .
+
+   ii.Why is it important:this uses LIKE with the wildcard % to retrieve employee data.where the last name contains mar somewhere in the name string
+     
  iii: sample output:
  SELECT emp_no, last_name FROM employees WHERE last_name LIKE '%mar%';
+ ![5](https://user-images.githubusercontent.com/72918495/103342641-fb97b100-4ac4-11eb-8a67-153f09f0813c.png)
+
  
    
 ##19.QUERY 
-       i. Description:
-      ii.Why is it important:
+       i. Description:this query show retrieve employees (name and emp_no) whose emp_no is even.                                                                                
+    ii.Why is it important:Importance of this is the chance any thing in the table makes details. 
+      
 
-   iii: sample output:
+
+ iii: sample output:
+   SELECT emp_no FROM employees WHERE emp_no % 2 =0;
+   
    
  ##20.QUERY 
        i. Description:
