@@ -39,6 +39,7 @@ Database Dependency Diagram
    Select emp.emp_no, emp.first_name, emp.last_name, sal.salary, sal.from_date from employees emp inner join (select emp_no, MAX(salary) as salary,  from_date from salaries group by emp_no) sal on (emp.emp_no = sal.emp_no) limit 10;
    
  (https://user-images.githubusercontent.com/72918495/103330287-c460da00-4a9b-11eb-935f-0f3dafbf0553.png)
+ 
 ##
  3.QUERY 
        i. Description:It show here is the Second largest salary
@@ -50,7 +51,7 @@ Database Dependency Diagram
  
  (https://user-images.githubusercontent.com/72918495/103330755-cb88e780-4a9d-11eb-97a0-5267194df575.png)
 
- ##
+##
  4.QUERY 
      i. Description: In this output shows the details of salaries.
          
@@ -78,6 +79,7 @@ WHERE YEAR(hire_date)  LIKE '2018%';
 ii.Why is it important: It is important to show all the list employees for you to have an idea to their details. 
 
 iii: sample output:
+
    Select 
     first_name, last_name,hire_date
 FROM
@@ -89,6 +91,7 @@ WHERE
             employees
         WHERE
            employees.first_name = employees.first_name);
+           
 ![query7](https://user-images.githubusercontent.com/72918495/103330747-c9bf2400-4a9d-11eb-93c7-5323a4ee14e2.png)
 
 ##
@@ -120,24 +123,27 @@ iii: sample output:
  ii.Why is it important: importance of this is to have a  list of your employees. 
 
 iii: sample output:
+
    Select first_name,last_name FROM `employees` WHERE 1 
 ![query3](https://user-images.githubusercontent.com/72918495/103330743-c7f56080-4a9d-11eb-956e-e6bcf383e59a.png)
 
 ##
-  10.QUERY 
+ 10.QUERY 
   i. Description:This query shows how to count your employees. 
        
  ii.Why is it important: This is Important because if you don't have an idea how to count your employee you can use this query to have your list.
       
  iii: sample output:
-   Select count(*) from employees;  
+ 
+ Select count(*) from employees;  
+   
 ![query14](https://user-images.githubusercontent.com/72918495/103330757-ccba1480-4a9d-11eb-9757-6be66f6e0583.png)
 
 ##
-  11.QUERY
+ 11.QUERY
  i. Description:This query shows employee  number and dates.
  ii.Why is it important:Need only the entry for the employees latest data.
-
+ 
 iii: sample output:
     Select  dept_no,from_date 
 FROM dept_manager; 
@@ -154,15 +160,18 @@ iii: sample output:
    Select first_name,gender 
        FROM employees;
 ![1](https://user-images.githubusercontent.com/72918495/103336349-dd28ba00-4ab2-11eb-8349-c0466e116c23.png)
+
 ##
  13.QUERY 
       i. Description: this query shows direct details from employees this shows all lists of every department code number.
    ii.Why is it important: Is It important for you to show and to pick up all the details from said company.
    
-  iii: sample output:
-    Select dept_no,emp_no from dept_manager;
+ iii: sample output:
+  
+  Select dept_no,emp_no from dept_manager;
    
 ![2](https://user-images.githubusercontent.com/72918495/103337119-3b569c80-4ab5-11eb-9e57-ec5f6cc93028.png)
+
 ##
  14.QUERY 
         i. Description: This query shows a limited list of employees.
@@ -173,15 +182,16 @@ iii: sample output:
 ![query15](https://user-images.githubusercontent.com/72918495/103330759-cd52ab00-4a9d-11eb-831b-a31ce67af81a.png)
 
 ##
-15.QUERY 
+ 15.QUERY 
        i. Description: this query is Another example to show your details.
       ii.Why is it important: these examples, we can easily use sql limit clause. 
       
    iii: sample output:
    select * from employees limit 1;
    ![query13](https://user-images.githubusercontent.com/72918495/103330756-cc217e00-4a9d-11eb-89a1-10c5a9cb71c0.png)
+   
 ##
-16.QUERY 
+ 16.QUERY 
       
    i. Description:this query shows the details of having list of employees 
   ii.Why is it important: The importance of this query is to show limited list of employee 
@@ -190,8 +200,9 @@ iii: sample output:
  iii: sample output:
    SELECT * FROM employees WHERE first_name LIKE 'A%'
    ![3](https://user-images.githubusercontent.com/72918495/103339056-56c4a600-4abb-11eb-9e2c-c1ff77f9716c.png)
+   
 ##
-17.QUERY 
+ 17.QUERY 
    i. Description:this query often contains many duplicate values; and sometimes you only want to list the different values.
  ii.Why is it important: This is important because it shows how we are able to connect two tables in your  database that make you more active in those details.
  
@@ -202,7 +213,7 @@ FROM employees,departments;
 ![4](https://user-images.githubusercontent.com/72918495/103339883-97bdba00-4abd-11eb-833c-d1003ebebb10.png)
 
 ##
-18.QUERY 
+ 18.QUERY 
       i. Description:this query shows the details and selected name .
 
    ii.Why is it important:this uses LIKE with the wildcard % to retrieve employee data.where the last name contains mar somewhere in the name string
@@ -214,7 +225,7 @@ FROM employees,departments;
  
    
 ##
-19.QUERY 
+ 19.QUERY 
        i. Description:this query show retrieve employees (name and emp_no) whose emp_no is even.                                                                                
     ii.Why is it important:Importance of this is the chance any thing in the table makes details. 
      
@@ -224,12 +235,15 @@ FROM employees,departments;
 
    
  ##
- 20.QUERY 
-       i. Description:
-      ii.Why is it important:
+  20.QUERY 
+       i. Description: this query shows Retrieve all employees whose emp_no is 10001. Print their lastnames andbirth years
+      ii.Why is it important: The importance of this query is if you want to select employee birthdays you can type thier codes or number.
       
    iii: sample output:
    SELECT last_name, YEAR(birth_date)AS "birth year" FROM employees WHERE emp_no=10001;
+   
+   ![6](https://user-images.githubusercontent.com/72918495/103343601-6d70fa00-4ac7-11eb-8765-e9f6f9a7066a.png)
+
    
 
 
