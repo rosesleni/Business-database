@@ -29,18 +29,18 @@ Database Dependency Diagram
    
   (https://user-images.githubusercontent.com/72918495/103329073-1dc60a80-4a96-11eb-99bb-6dacff4f7e67.png) 
   
- ##
+##
  2.QUERY 
        i. Description: This query show Employee and Salary table join to display the salary of the individual
        
    ii.Why is it important:It is important for me bacause its shows 
    
    iii: sample output:
-   Select emp.emp_no, emp.first_name, emp.last_name, sal.salary, sal.from_date from employees emp inner join (select emp_no, MAX(salary) as salary, from_date from salaries group by emp_no) sal on (emp.emp_no = sal.emp_no) limit 10;
+   Select emp.emp_no, emp.first_name, emp.last_name, sal.salary, sal.from_date from employees emp inner join (select emp_no, MAX(salary) as salary,  from_date from salaries group by emp_no) sal on (emp.emp_no = sal.emp_no) limit 10;
    
-(https://user-images.githubusercontent.com/72918495/103330287-c460da00-4a9b-11eb-935f-0f3dafbf0553.png)
-
-##3.QUERY 
+ (https://user-images.githubusercontent.com/72918495/103330287-c460da00-4a9b-11eb-935f-0f3dafbf0553.png)
+##
+ 3.QUERY 
        i. Description:It show here is the Second largest salary
       ii.Why is it important: It is important to have this because it shows who is the one of your employees with the highest salaries. 
 
@@ -73,7 +73,7 @@ WHERE YEAR(hire_date)  LIKE '2018%';
 ![query8](https://user-images.githubusercontent.com/72918495/103330749-c9bf2400-4a9d-11eb-87be-cbdc616b13c1.png)
 
 ##
-6.QUERY 
+ 6.QUERY 
    i. Description: In this query shows the list of the employee and the hired date.
 ii.Why is it important: It is important to show all the list employees for you to have an idea to their details. 
 
@@ -92,7 +92,7 @@ WHERE
 ![query7](https://user-images.githubusercontent.com/72918495/103330747-c9bf2400-4a9d-11eb-93c7-5323a4ee14e2.png)
 
 ##
-7.QUERY 
+ 7.QUERY 
   i. Description:In this query display all the information of the employees whose salary is within the range 3000..
 
    ii.Why is it important: The importance of this is to show salary like you want to direct to show your salaries
@@ -101,8 +101,9 @@ WHERE
    Select * from salaries  where salary> all(select salary  from salaries where salary<3000);
    
 ![query4](https://user-images.githubusercontent.com/72918495/103330744-c88df700-4a9d-11eb-9e9a-953cf108f379.png)
+
 ##
-8.QUERY 
+ 8.QUERY 
   i. Description:this query showing list employee numbers and theirs who have  the biggest salary.
      
  ii.Why is it important: Importance of this is showing details to every employee.
@@ -113,7 +114,7 @@ iii: sample output:
 ![query6](https://user-images.githubusercontent.com/72918495/103330746-c9268d80-4a9d-11eb-91fa-82b03d3ff90d.png)
 
 ##
-9.QUERY 
+ 9.QUERY 
    i. Description: this query shows the employee personal details.
        
  ii.Why is it important: importance of this is to have a  list of your employees. 
@@ -122,19 +123,19 @@ iii: sample output:
    Select first_name,last_name FROM `employees` WHERE 1 
 ![query3](https://user-images.githubusercontent.com/72918495/103330743-c7f56080-4a9d-11eb-956e-e6bcf383e59a.png)
 
- ##
- 10.QUERY 
+##
+  10.QUERY 
   i. Description:This query shows how to count your employees. 
        
-ii.Why is it important: This is Important because if you don't have an idea how to count your employee you can use this query to have your list.
+ ii.Why is it important: This is Important because if you don't have an idea how to count your employee you can use this query to have your list.
       
-iii: sample output:
+ iii: sample output:
    Select count(*) from employees;  
 ![query14](https://user-images.githubusercontent.com/72918495/103330757-ccba1480-4a9d-11eb-9757-6be66f6e0583.png)
 
 ##
-11.QUERY
-i. Description:This query shows employee  number and dates.
+  11.QUERY
+ i. Description:This query shows employee  number and dates.
  ii.Why is it important:Need only the entry for the employees latest data.
 
 iii: sample output:
@@ -144,7 +145,7 @@ FROM dept_manager;
 ![query1](https://user-images.githubusercontent.com/72918495/103330741-c62b9d00-4a9d-11eb-9144-32073b5ebe73.png)
 
 ##
-12.QUERY 
+ 12.QUERY 
         i. Description:This query shows employees gender,name.
         
   ii.Why is it important: this is important because if you want to know your employees gender and names.
@@ -153,9 +154,8 @@ iii: sample output:
    Select first_name,gender 
        FROM employees;
 ![1](https://user-images.githubusercontent.com/72918495/103336349-dd28ba00-4ab2-11eb-8349-c0466e116c23.png)
-
 ##
-13.QUERY 
+ 13.QUERY 
       i. Description: this query shows direct details from employees this shows all lists of every department code number.
    ii.Why is it important: Is It important for you to show and to pick up all the details from said company.
    
@@ -163,15 +163,14 @@ iii: sample output:
     Select dept_no,emp_no from dept_manager;
    
 ![2](https://user-images.githubusercontent.com/72918495/103337119-3b569c80-4ab5-11eb-9e57-ec5f6cc93028.png)
-   
 ##
-14.QUERY 
+ 14.QUERY 
         i. Description: This query shows a limited list of employees.
-      ii.Why is it important: This query shows if you want to have a list and limit the name of employee list,details. 
+   ii.Why is it important: This query shows if you want to have a list and limit the name of employee list,details. 
       
-   iii: sample output:
+  iii: sample output:
    select first_name from employees limit 5; 
-   ![query15](https://user-images.githubusercontent.com/72918495/103330759-cd52ab00-4a9d-11eb-831b-a31ce67af81a.png)
+![query15](https://user-images.githubusercontent.com/72918495/103330759-cd52ab00-4a9d-11eb-831b-a31ce67af81a.png)
 
 ##
 15.QUERY 
@@ -193,19 +192,24 @@ iii: sample output:
    ![3](https://user-images.githubusercontent.com/72918495/103339056-56c4a600-4abb-11eb-9e2c-c1ff77f9716c.png)
 ##
 17.QUERY 
-       i. Description:
-      ii.Why is it important:
-      
-   iii: sample output:
+   i. Description:this query often contains many duplicate values; and sometimes you only want to list the different values.
+ ii.Why is it important: This is important because it shows how we are able to connect two tables in your  database that make you more active in those details.
+ 
+iii: Sample output:
    SELECT DISTINCT emp_no, dept_name
 FROM employees,departments;
+
+![4](https://user-images.githubusercontent.com/72918495/103339883-97bdba00-4abd-11eb-833c-d1003ebebb10.png)
 
 ##
 18.QUERY 
        i. Description:
-      ii.Why is it important:
+       
+  ii.Why is it important:
       
-   iii: sample output:
+ iii: sample output:
+ SELECT emp_no, last_name FROM employees WHERE last_name LIKE '%mar%';
+ 
    
 ##19.QUERY 
        i. Description:
