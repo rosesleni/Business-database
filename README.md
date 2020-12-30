@@ -126,7 +126,6 @@ iii: sample output:
 
    Select first_name,last_name FROM `employees` WHERE 1 
 ![query3](https://user-images.githubusercontent.com/72918495/103330743-c7f56080-4a9d-11eb-956e-e6bcf383e59a.png)
-
 ##
  10.QUERY 
   i. Description:This query shows how to count your employees. 
