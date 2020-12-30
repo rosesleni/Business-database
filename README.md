@@ -17,22 +17,22 @@ Table name and Description:
 Database Dependency Diagram
 
 ![ERD image](https://user-images.githubusercontent.com/72918495/103279845-c67a5880-4a09-11eb-8baa-ea8bce14cfb7.png)
-
+>
 1.QUERY 
        i. Description:Particular employee maximum salary details
        
-   ii.Why is it important:This is the of of the important query that is show becuse if you want to have specifect output like salries.
+   ii.Why is it important:This is the most important query that is shown because if you want to have specific output like salaries.
      
-   Sample output:
+   iii: Sample output:
   ** 
    SELECT sal1.* FROM salaries AS sal1 LEFT JOIN salaries AS sal2 ON (sal1.emp_no = sal2.emp_no AND sal1.from_date < sal2.from_date) WHERE sal2.from_date IS NULL and sal1.emp_no = 10001;
    
    ![query10](https://user-images.githubusercontent.com/72918495/103329073-1dc60a80-4a96-11eb-99bb-6dacff4f7e67.png)
-
+>
 2.QUERY 
-       i. Description:
+       i. Description: This query show Employee and Salary table join to display the salary of the individual
        
-   ii.Why is it important:
+   ii.Why is it important:It is important for me bacause its shows 
    
    
    iii: sample output:
