@@ -73,7 +73,7 @@ WHERE YEAR(hire_date)  LIKE '2018%';
    i. Description: In this query shows the list of the employee and the hired date.
 ii.Why is it important: It is important to show all the list employees for you to have an idea to their details. 
 
-   iii: sample output:
+iii: sample output:
    Select 
     first_name, last_name,hire_date
 FROM
@@ -85,12 +85,10 @@ WHERE
             employees
         WHERE
            employees.first_name = employees.first_name);
-
 ![query7](https://user-images.githubusercontent.com/72918495/103330747-c9bf2400-4a9d-11eb-93c7-5323a4ee14e2.png)
 ##
 7.QUERY 
-
-   i. Description:In this query display all the information of the employees whose salary is within the range 3000..
+  i. Description:In this query display all the information of the employees whose salary is within the range 3000..
 
    ii.Why is it important: The importance of this is to show salary like you want to direct to show your salaries
    
@@ -116,10 +114,8 @@ iii: sample output:
  ii.Why is it important: importance of this is to have a  list of your employees. 
 
 iii: sample output:
-   Select first_name,last_name FROM `employees` WHERE 1
-   
+   Select first_name,last_name FROM `employees` WHERE 1 
    ![query3](https://user-images.githubusercontent.com/72918495/103330743-c7f56080-4a9d-11eb-956e-e6bcf383e59a.png)
-
 ##
 10.QUERY 
 
@@ -152,7 +148,6 @@ FROM dept_manager;
 iii: sample output:
    Select first_name,gender 
        FROM employees;
-       
 ![1](https://user-images.githubusercontent.com/72918495/103336349-dd28ba00-4ab2-11eb-8349-c0466e116c23.png)
   ##
 13.QUERY 
@@ -160,6 +155,7 @@ iii: sample output:
       ii.Why is it important:
       
    iii: sample output:
+   
 ##
 14.QUERY 
        i. Description:
