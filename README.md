@@ -67,7 +67,7 @@ iii: sample output:
    SELECT first_name, hire_date 
 FROM employees 
 WHERE YEAR(hire_date)  LIKE '2018%';
-![query8](https://user-images.githubusercontent.com/72918495/103330749-c9bf2400-4a9d-11eb-87be-cbdc616b13c1.png)
+  ![query8](https://user-images.githubusercontent.com/72918495/103330749-c9bf2400-4a9d-11eb-87be-cbdc616b13c1.png)
 ##
 6.QUERY 
    i. Description: In this query shows the list of the employee and the hired date.
@@ -106,19 +106,17 @@ iii: sample output:
    Select emp_no,max(salary) from salaries group by emp_no;
    
    ![query6](https://user-images.githubusercontent.com/72918495/103330746-c9268d80-4a9d-11eb-91fa-82b03d3ff90d.png)
-##
+  ##
 9.QUERY 
-
    i. Description: this query shows the employee personal details.
        
  ii.Why is it important: importance of this is to have a  list of your employees. 
 
 iii: sample output:
    Select first_name,last_name FROM `employees` WHERE 1 
-   ![query3](https://user-images.githubusercontent.com/72918495/103330743-c7f56080-4a9d-11eb-956e-e6bcf383e59a.png)
-##
+![query3](https://user-images.githubusercontent.com/72918495/103330743-c7f56080-4a9d-11eb-956e-e6bcf383e59a.png)
+ ##
 10.QUERY 
-
   i. Description:This query shows how to count your employees. 
        
 ii.Why is it important: This is Important because if you don't have an idea how to count your employee you can use this query to have your list.
@@ -138,8 +136,7 @@ iii: sample output:
 FROM dept_manager; 
 
 ![query1](https://user-images.githubusercontent.com/72918495/103330741-c62b9d00-4a9d-11eb-9144-32073b5ebe73.png)
-
-##
+ ##
 12.QUERY 
         i. Description:This query shows employees gender,name.
         
