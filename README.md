@@ -50,9 +50,12 @@ Database Dependency Diagram
   
  SELECT MAX(salary) FROM salaries WHERE salary NOT IN ( SELECT Max(salary) FROM salaries);
  
+![query12](https://user-images.githubusercontent.com/72918495/103330755-cb88e780-4a9d-11eb-97a0-5267194df575.png)
+ 
 4.QUERY 
        i. Description:
       ii.Why is it important:
+     
       
    iii: sample output:
    Select emp.emp_no, emp.first_name, emp.last_name, sal.salary, sal.to_date from employees emp inner join (select emp_no, MAX(salary) as salary, to_date from salaries group by emp_no) sal on (emp.emp_no = sal.emp_no) limit 10;
