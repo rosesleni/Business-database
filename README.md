@@ -103,9 +103,6 @@ WHERE
 
 ![query7](https://user-images.githubusercontent.com/72918495/103330747-c9bf2400-4a9d-11eb-93c7-5323a4ee14e2.png)
 
-
-   
-
 7.QUERY 
        i. Description:
       ii.Why is it important:
@@ -113,8 +110,7 @@ WHERE
    iii: sample output:
    Select * from salaries  where salary> all(select salary  from salaries where salary<3000);
    
-![query3](https://user-images.githubusercontent.com/72918495/103330743-c7f56080-4a9d-11eb-956e-e6bcf383e59a.png)
-
+![query4](https://user-images.githubusercontent.com/72918495/103330744-c88df700-4a9d-11eb-9e9a-953cf108f379.png)
 
 
 8.QUERY 
