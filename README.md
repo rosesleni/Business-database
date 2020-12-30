@@ -62,10 +62,8 @@ Database Dependency Diagram
 5.QUERY 
         i. Description:  show the details in your company work on date.
 
- ii.Why is it important: The importance of this showing how it simply shows all workers work in and out. 
- 
+ ii.Why is it important: The importance of this showing how it simply shows all workers work in and out.
 iii: sample output:
-   
    SELECT first_name, hire_date 
 FROM employees 
 WHERE YEAR(hire_date)  LIKE '2018%';
@@ -73,7 +71,6 @@ WHERE YEAR(hire_date)  LIKE '2018%';
 ##
 6.QUERY 
    i. Description: In this query shows the list of the employee and the hired date.
-
 ii.Why is it important: It is important to show all the list employees for you to have an idea to their details. 
 
    iii: sample output:
@@ -102,7 +99,6 @@ WHERE
    
 ![query4](https://user-images.githubusercontent.com/72918495/103330744-c88df700-4a9d-11eb-9e9a-953cf108f379.png)
 ##
-
 8.QUERY 
   i. Description:this query showing list employee numbers and theirs who have  the biggest salary.
      
