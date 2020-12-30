@@ -60,6 +60,10 @@ Database Dependency Diagram
       
    iii: sample output:
    Select emp.emp_no, emp.first_name, emp.last_name, sal.salary, sal.to_date from employees emp inner join (select emp_no, MAX(salary) as salary, to_date from salaries group by emp_no) sal on (emp.emp_no = sal.emp_no) limit 10;
+   
+   (https://user-images.githubusercontent.com/72918495/103330760-cd52ab00-4a9d-11eb-84bf-2594359130bb.png)
+
+
 
 5.QUERY 
        i. Description:
